@@ -11,8 +11,8 @@ from discord.ext import commands
 from discord.ext import commands, tasks
 import re
 
-import sys
-import requests
+#import sys
+#import requests
 
 
 #import openai
@@ -21,8 +21,8 @@ import requests
 
 # uncomment the 2 lines below for PC deploy
 # comment the 2 lines below for railway deploy
-from dotenv import load_dotenv
-load_dotenv('spammytest.env')
+#from dotenv import load_dotenv
+#load_dotenv('spammytest.env')
 
 #uncomment for PC
 #openai.api_key = os.getenv('TOKEN2')
@@ -551,10 +551,10 @@ async def on_voice_state_update(member, before, after):
 
 
 # PC deploy
-client.run(os.getenv('TOKEN'))  
+#client.run(os.getenv('TOKEN'))  
 
 #railway deploy 
-#client.run(os.environ['TOKEN'])
+client.run(os.environ['TOKEN'])
 
 # https://discord.com/api/oauth2/authorize?client_id=1079357107771551814&permissions=16787472&scope=bot%20applications.commands
 
